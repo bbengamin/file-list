@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 app.use(cors())
+app.use(express.static(process.env.VIDEO_PATH));
 
 console.log()
 app.get('/files', function (req, res) {
