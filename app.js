@@ -61,7 +61,7 @@ app.post('/subtitles', function(req, res) {
               content += endline + endline;
               content += i + endline;
               content += subtitle.start + " --> " + subtitle.end + endline;
-              content += subtitle.text + " " + i;
+              content += subtitle.text;
           });
       }
 
